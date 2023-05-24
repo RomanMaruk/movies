@@ -15,6 +15,7 @@ import { CardShowsComponent } from './components/card-shows/card-shows.component
 import { NgxPaginationModule } from 'ngx-pagination';
 import { SearchPipe } from './pipes/search.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HoverDirective } from './directives/hover.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FiltersComponent,
     CardShowsComponent,
     SearchPipe,
+    HoverDirective,
   ],
   imports: [
     BrowserModule,

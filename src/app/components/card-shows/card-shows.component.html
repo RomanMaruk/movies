@@ -1,6 +1,6 @@
-<div class="card">
+<div class="card" hover [ele]="div">
   <img [src]="show.images.posterArt.url" [alt]="show.title" />
-  <div class="descriptions">
+  <div class="descriptions" #div>
     <h1 class="title">{{ show.title }}</h1>
     <p class="year">
       <i class="fa fa-calendar-alt"></i> <span>{{ show.releaseYear }}</span>
