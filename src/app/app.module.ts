@@ -9,6 +9,7 @@ import { ShowTypeComponent } from './components/show-type/show-type.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { SeriesComponent } from './pages/series/series.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { CardShowsComponent } from './components/card-shows/card-shows.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FiltersComponent } from './components/filters/filters.component';
     ShowTypeComponent,
     MoviesComponent,
     SeriesComponent,
-    FiltersComponent
+    FiltersComponent,
+    CardShowsComponent
   ],
   imports: [
     BrowserModule,
