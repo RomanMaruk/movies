@@ -1,0 +1,25 @@
+@use "/src/variables.scss" as st;
+@use "/src/app/styles/common.scss";
+
+.wrap {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+  .logo {
+    flex: 1;
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.trial {
+  padding: 8px 20px;
+  background-color: st.$red;
+  border-radius: st.$borderRadius;
+}
