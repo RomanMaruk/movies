@@ -12,6 +12,7 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { SeriesComponent } from './pages/series/series.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { CardShowsComponent } from './components/card-shows/card-shows.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { CardShowsComponent } from './components/card-shows/card-shows.component
     FiltersComponent,
     CardShowsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgxPaginationModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

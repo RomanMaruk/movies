@@ -1,0 +1,29 @@
+.ngx-pagination {
+  li {
+    opacity: 0.6;
+    background-color: red !important;
+    transform: scale(1.5);
+    margin-left: 20px !important;
+    border-radius: 50% !important;
+    a {
+      color: #fff !important;
+    }
+  }
+  .pagination-previous,
+  .pagination-previous a {
+    &::before {
+      margin-right: 0 !important;
+    }
+  }
+
+  .pagination-next,
+  .pagination-next a {
+    &::after {
+      margin-left: 0 !important;
+    }
+  }
+  .current {
+    opacity: 1;
+    background-color: red !important;
+  }
+}

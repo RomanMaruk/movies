@@ -1,12 +1,24 @@
 <app-filters></app-filters>
 
 <div class="wrap">
+  <h1 class="title">Popular Series</h1>
   <ng-container *ngIf="movies$ | async as movies">
     <div class="wrap__movies">
       <app-card-shows
-        *ngFor="let m of movies.entries"
+        *ngFor="
+          let m of movies.entries
+            | paginate : { itemsPerPage: 10, currentPage: p }
+        "
         [show]="m"
       ></app-card-shows>
+    </div>
+
+    <div class="wrap__pagination">
+      <pagination-controls
+        previousLabel=""
+        nextLabel=""
+        (pageChange)="p = $event"
+      ></pagination-controls>
     </div>
   </ng-container>
 </div>

@@ -7,6 +7,7 @@ import { ShowsService } from 'src/app/services/shows.service';
   styleUrls: ['./series.component.scss'],
 })
 export class SeriesComponent {
+  public p = 1;
   constructor(private showsService: ShowsService) {}
 
   public movies$ = this.showsService.series$;
