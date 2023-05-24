@@ -6,9 +6,26 @@
   align-items: center;
   padding: 10px;
   gap: 8px;
-  .logo {
+  .logo-wrap {
     flex: 1;
+    position: relative;
   }
+}
+.link {
+  position: absolute;
+  left: 300px;
+  top: -10px;
+  display: flex;
+  bottom: -10px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+  &:last-child {
+    left: 420px;
+  }
+}
+.active {
+  background-color: st.$red;
 }
 
 .login {

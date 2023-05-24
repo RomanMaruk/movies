@@ -5,7 +5,6 @@ import { IShows } from '../models/shows.model';
   name: 'search',
 })
 export class SearchPipe implements PipeTransform {
-  // transform(shows: IShows, ...args: unknown[]): unknown {
   transform(shows: IShows[], search = ''): IShows[] {
     if (!search.trim()) {
       return shows;
