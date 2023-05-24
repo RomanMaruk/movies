@@ -1,1 +1,12 @@
-<p>series works!</p>
+<app-filters></app-filters>
+
+<div class="wrap">
+  <ng-container *ngIf="movies$ | async as movies">
+    <div class="wrap__movies">
+      <app-card-shows
+        *ngFor="let m of movies.entries"
+        [show]="m"
+      ></app-card-shows>
+    </div>
+  </ng-container>
+</div>

@@ -1,15 +1,12 @@
 <div class="card">
-  <img
-    src="https://static.rviewer.io/challenges/datasets/dreadful-tomatoes/assets/the_great_beauty.jpg"
-    alt=""
-  />
+  <img [src]="show.images.posterArt.url" [alt]="show.title" />
   <div class="descriptions">
-    <h1 class="title">American History X</h1>
-    <p class="year"><i class="fa fa-calendar-alt"></i> <span>2020</span></p>
+    <h1 class="title">{{ show.title }}</h1>
+    <p class="year">
+      <i class="fa fa-calendar-alt"></i> <span>{{ show.releaseYear }}</span>
+    </p>
     <p class="text">
-      The true story of Frank Abagnale Jr. who, before his 19th birthday,
-      successfully conned millions of dollars' worth of checks as a Pan Am
-      pilot, doctor, and legal prosecutor.
+      {{ show.description }}
     </p>
   </div>
 </div>

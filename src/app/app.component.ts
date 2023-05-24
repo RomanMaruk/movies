@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ShowsService } from './services/shows.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'Got_IT_Practic_TEST_Angular_15';
+export class AppComponent implements OnInit {
+  constructor(private showsService: ShowsService) {}
+
+  ngOnInit(): void {
+    this.showsService.getAllShows().subscribe({
+      next: (shows) => {
+        console.log(shows);
+        this.showsService.setMovies = shows.movies;
+        this.showsService.setSeries = shows.series;
+      },
+    });
+  }
 }

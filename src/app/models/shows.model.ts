@@ -18,3 +18,14 @@ export interface IImages {
     height: number;
   };
 }
+
+export interface IShowsModified {
+  movies: {
+    total: number;
+    entries: IShows[];
+  };
+  series: {
+    total: number;
+    entries: IShows[];
+  };
+}
