@@ -26,3 +26,12 @@ h6 {
 p {
   margin: 0;
 }
+a {
+  color: inherit;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
