@@ -1,4 +1,4 @@
-<app-filters></app-filters>
+<app-filters (emitName)="search = $event"></app-filters>
 
 <div class="wrap">
   <h1 class="title">Popular Series</h1>
@@ -7,6 +7,7 @@
       <app-card-shows
         *ngFor="
           let m of movies.entries
+            | search : search
             | paginate : { itemsPerPage: 10, currentPage: p }
         "
         [show]="m"

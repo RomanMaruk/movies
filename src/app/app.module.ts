@@ -13,6 +13,8 @@ import { SeriesComponent } from './pages/series/series.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { CardShowsComponent } from './components/card-shows/card-shows.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { SearchPipe } from './pipes/search.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SeriesComponent,
     FiltersComponent,
     CardShowsComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

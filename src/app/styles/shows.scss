@@ -1,0 +1,19 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+.wrap__movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 52px;
+}
+.wrap__pagination {
+  margin-top: auto;
+  text-align: center;
+}

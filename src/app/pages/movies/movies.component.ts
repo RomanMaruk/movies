@@ -8,7 +8,10 @@ import { ShowsService } from 'src/app/services/shows.service';
 })
 export class MoviesComponent {
   public p = 1;
-  constructor(private showsService: ShowsService) {}
+  search = '';
+  constructor(private showsService: ShowsService) {
+    console.log(this.search);
+  }
 
   public movies$ = this.showsService.movies$;
 }

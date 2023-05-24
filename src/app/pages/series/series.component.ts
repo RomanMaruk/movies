@@ -8,6 +8,7 @@ import { ShowsService } from 'src/app/services/shows.service';
 })
 export class SeriesComponent {
   public p = 1;
+  public search = '';
   constructor(private showsService: ShowsService) {}
 
   public movies$ = this.showsService.series$;
