@@ -1,0 +1,7 @@
+@use "/src/variables.scss" as st;
+@use "/src/app/styles/common.scss";
+
+.container {
+  background-color: st.$red;
+  padding: 10px 0;
+}
