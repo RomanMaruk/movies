@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ShowTypeComponent } from './components/show-type/show-type.component';
+import { ShowTypeComponent } from './pages/show-type/show-type.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { SeriesComponent } from './pages/series/series.component';
 import { FiltersComponent } from './components/filters/filters.component';
